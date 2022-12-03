@@ -1,0 +1,51 @@
+import tkinter as tk
+
+windows = tk.Tk()
+
+frame_a = tk.Frame(relief="sunken",borderwidth=5,bg='red')
+ent_a = tk.Entry(master=frame_a,width=20)
+label_a = tk.Label(master=frame_a,text = 'label_A')
+but_a = tk.Button(master=frame_a, text="Преобразовать_a")
+ent_a.pack()
+label_a.pack()
+but_a.pack()
+
+frame_b = tk.Frame(relief="raised",borderwidth=5,bg='yellow')
+ent_b = tk.Entry(master=frame_b,width=20)
+label_b = tk.Label(master=frame_b,text = 'label_B')
+but_b = tk.Button(master=frame_b, text="Преобразовать_b")
+ent_b.pack()
+label_b.pack()
+but_b.pack()
+
+frame_c = tk.Frame(relief="flat",borderwidth=5,bg='green')
+ent_c = tk.Entry(master=frame_c,width=20)
+label_c = tk.Label(master=frame_c,text = 'label_C')
+but_c = tk.Button(master=frame_c, text="Преобразовать_c")
+ent_c.pack()
+label_c.pack()
+but_c.pack()
+
+frame_d = tk.Frame(relief="groove",borderwidth=5,bg='blue')
+ent_d = tk.Entry(master=frame_d,width=20)
+label_d = tk.Label(master=frame_d,text = 'label_D')
+but_d = tk.Button(master=frame_d, text="Преобразовать_d")
+ent_d.pack()
+label_d.pack()
+but_d.pack()
+
+frame_e = tk.Frame(relief="ridge",borderwidth=5,bg='purple')
+ent_e = tk.Entry(master=frame_e,width=20)
+label_e = tk.Label(master=frame_e,text = 'label_E')
+but_e = tk.Button(master=frame_e, text="Преобразовать_e")
+ent_e.pack()
+label_e.pack()
+but_e.pack()
+
+frame_a.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
+frame_b.pack(fill=tk.X, side=tk.LEFT, expand=True)
+frame_c.pack(fill=tk.BOTH, side=tk.LEFT, expand=False)
+frame_d.pack(fill=tk.Y, side=tk.LEFT, expand=True)
+frame_e.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
+
+windows.mainloop()
